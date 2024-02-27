@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FDA0DA6A-215F-BCF7-111F-58F6B42F3381" name="GYVI_ZAIDIMAI">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:01:10 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pradzios_data_laikas" id="2301A593-1250-9426-F28C-538E0A2D882C">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:01:19 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pabaigos_data_laikas" id="9FA15A5B-CCF2-DA6C-6062-869FAC0EFA0E">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:01:26 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pobudis" id="497E605C-BA67-B878-2B6D-F4A4AF6545D7">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:01:42 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zaideju_skaicius" id="97BAB07A-6B34-9DED-1834-2F2D084B75AE">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:01:47 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

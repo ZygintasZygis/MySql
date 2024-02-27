@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB14B8B2-9898-307B-9DF0-74C00F4F42E1" name="ZAIDIMAS">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:02:05 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pavadinimas" id="2130D3C2-84A8-24A9-A673-2A284700E008">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:02:12 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pobudis" id="4C17C29F-27C8-CAB1-2533-4C31F5CA5962">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:02:20 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="max_zaideju" id="8CFC5425-2516-A291-964D-16C7D5317950">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:02:24 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

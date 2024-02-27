@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SnapshotOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.SnapshotOraclev11g" name="zaideju_dalyvavimai" directorySegmentName="seg_0" id="D43C27BE-475A-CEA6-BD70-F75D8FDF2641">
+<createdBy>zygis</createdBy>
+<createdTime>2023-04-18 13:50:12 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<action>ON DEMAND</action>
+<defaultSegment>NO</defaultSegment>
+<queryRewrite>ENABLE</queryRewrite>
+<refresh>YES</refresh>
+<refreshType>COMPLETE</refreshType>
+<subquery><![CDATA[SELECT dalyvavimai.zaidejai_id,
+       AVG(prizas),
+       SUM(prizas),
+       MIN(prizas),
+       MAX(prizas)
+FROM dalyvavimai
+GROUP BY dalyvavimai.zaidejai_id]]></subquery>
+<subqueryNeedsMigration>false</subqueryNeedsMigration>
+<with></with>
+</SnapshotOraclev11g>

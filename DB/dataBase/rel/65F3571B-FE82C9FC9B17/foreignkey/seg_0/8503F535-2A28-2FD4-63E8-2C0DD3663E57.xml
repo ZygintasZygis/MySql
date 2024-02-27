@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8503F535-2A28-2FD4-63E8-2C0DD3663E57" containerWithKeyObject="5506385D-495C-64B9-75A0-843CA37AE9EE" localFKIndex="370C5C4C-9C5F-5C9C-0D24-737FF44EEB0E" name="DARBO_SUTARTYS_PUNKTAI_FK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>D54D4417-0364-548C-087C-A233324F0968</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<referredTableLongName>PUNKTAI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F6F8C244-965D-4DB0-0B5C-EFC699E93C98</referredTableID>
+<keyObject>A5040327-54DF-49DA-B43D-A69422DE8078</keyObject>
+<referredKeyID>A5040327-54DF-49DA-B43D-A69422DE8078</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PUNKTAI_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

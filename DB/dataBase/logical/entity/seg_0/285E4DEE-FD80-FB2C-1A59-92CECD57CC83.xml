@@ -1,0 +1,201 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="285E4DEE-FD80-FB2C-1A59-92CECD57CC83" name="DARBO_SUTARTIS">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:03:39 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="darbdavio_pavadinimas" id="E7C1FE01-AD10-3984-8099-EFEAE17B7404">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:03:46 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="registruotas_buveines_adresas" id="587707F1-AEAE-3275-4AF5-EFE0F535BA99">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:03:57 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tel_nr" id="CE0318C2-BDC3-D26A-FA80-5E1F90B23A54">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:04:08 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="el_pastas" id="75583273-45EE-CF9B-908E-02589C5B3480">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:04:14 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vardas" id="F54D44FD-C5C8-5732-A520-1E953F378789">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:04:18 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pavarde" id="8023EF80-3844-0556-AD0F-174800BA3F4C">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:04:23 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tapatybes_korteles_nr" id="A423F011-B252-1244-0386-61F95A9AB741">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:04:30 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="darbo_apibudinimas" id="D8074CA1-A2C2-3367-C944-8EF6CC52766C">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:04:42 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="darbo_uzmokestis" id="CC0D7BCB-AAE7-ED98-6F32-FD956B83320F">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:04:53 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="darbo_sutarties_rusis" id="3740D1C6-755B-7D8C-3DE6-656890121838">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:05:04 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="salygos" id="58C19583-5EC8-F24B-3CBE-A739DA97F499">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:05:10 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="galioja_nuo" id="89B8AF6B-08A1-4794-A912-40BF598770F1">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:05:16 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="galioja_iki" id="10325319-4861-84AB-CD96-A412A694AD68">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:05:22 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CF82C438-5594-30A9-314E-88A5CECD19A5" name="ZAIDEJAS">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 13:48:33 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<createSurrogateKey>true</createSurrogateKey>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lytis" id="D7B038F2-A54A-09CF-1E72-CF4F3262CD51">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 13:54:11 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gimimo_data" id="AE3197A1-1E54-E39B-7C17-39257DADBE04">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 13:59:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="asmens_kodas" id="E601A183-2E0F-1F10-60EC-43DEBBE42B8A">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 13:59:56 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vardas" id="988D94BF-95D6-DF0F-3B89-D8F80E2C0C2B">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:00:04 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pavarde" id="82857465-7D59-B65A-9A2C-7AB6055CB106">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:00:07 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="el_pastas" id="272A49AF-FF6F-07A0-5285-6F969646404B">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:00:12 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tel_nr" id="BE242E17-3D24-2E38-4F03-B92360334675">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:00:21 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 CHAR</dataTypeSize>
+<ownDataTypeParameters>12 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

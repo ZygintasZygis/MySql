@@ -1,0 +1,61 @@
+
+DECLARE
+  zaidejo_lytis VARCHAR;
+  zaidejo_gimdata DATE;
+  zaidejo_asmenskodas VARCHAR;
+  zaidejo_vardas VARCHAR;
+  zaidejo_pavarde VARCHAR;
+  zaidejo_elpastas VARCHAR;
+  zaidejo_telnr VARCHAR;
+  zaidejo_id NUMBER;
+  dalyvavimas NUMBER;
+  gyvas_zaidimas NUMBER;
+  vieta NUMBER;
+  prizas NUMBER;
+  
+BEGIN
+  zaidejo_lytis := 'vyras';
+  zaidejo_gimdata := '14-FEB-55';
+  SELECT asmens_kodas INTO zaidejo_asmenskodas FROM zaidejai WHERE zaidejai.zaidejai_id = 1;
+  zaidejo_vardas := 'John';
+  zaidejo_pavarde := 'Wick';
+  zaidejo_elpastas := 'johnwick@gmail.com';
+  zaidejo_telnr := '88888888';
+  zaidejo_id := 41;
+  dalyvavimas := 21;
+  gyvas_zaidimas := 1;
+  vieta := 21;
+  prizas := 2000;
+  
+  INSERT INTO zaidejai ('lytis','gimimo_data','asmens_kodas','vardas','pavarde','el_pastas','tel_nr','zaidejai_id') VALUES (zaidejo_lytis,
+  zaidejo_gimdata, zaidejo_asmenskodas, zaidejo_vardas, zaidejo_pavarde, zaidejo_elpastas, zaidejo_telnr, zaidejo_id);
+  
+  INSERT INTO dalyvavimai ('vieta','prizas','dalyvavimai_id','zaidejai_id','gyvi_zaidimai_id') VALUES (vieta, prizas,dalyvavimas,zaidejo_id,gyvas_zaidimas);
+  COMMIT;
+  EXCEPTION
+    WHEN OTHERS THEN
+        dbms_output.Put_line('Dalyvavimo pridejimo klaida.'
+            || SQLERRM);
+ ROLLBACK;
+END;
+
+
+*******************************************************************************************
+  
+BEGIN
+  UPDATE gyvi_zaidimai
+  SET punktai_id = 2
+  WHERE gyvi_zaidimai_id IN (SELECT gyvi_zaidimai_id
+  FROM gyvi_zaidimai 
+  WHERE punktai_id = 1);
+  
+  UPDATE darbo_sutartys
+  SET punktai_id = 2
+  WHERE darbo_sutartys_id IN (SELECT darbo_sutartys_id
+  FROM darbo_sutartys
+  WHERE punktai_id = 1);
+  
+  DELETE FROM punktai
+  WHERE punktai_id = 1; 
+  --COMMIT;
+END;

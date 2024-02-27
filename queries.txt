@@ -1,0 +1,80 @@
+SELECT zaidejai.vardas, zaidejai.pavarde, dalyvavimai.vieta, gyvi_zaidimai.pradzios_data_laikas, gyvi_zaidimai.pabaigos_data_laikas
+FROM dalyvavimai
+    INNER JOIN zaidejai ON dalyvavimai.zaidejai_id = zaidejai.zaidejai_id
+    INNER JOIN gyvi_zaidimai ON dalyvavimai.gyvi_zaidimai_id = gyvi_zaidimai.gyvi_zaidimai_id
+    INNER JOIN punktai ON gyvi_zaidimai.punktai_id = punktai.punktai_id
+WHERE dalyvavimai.vieta < 6;
+
+******************************************************************************************************
+
+WITH zaideju_dalyvavimai_cte (zaidejai_id, vardas, pavarde, asmens_kodas, vieta, pradzios_data, pabaigos_data, zaideju_sk)
+    AS(SELECT DISTINCT zaidejai.zaidejai_id,
+                       zaidejai.vardas,
+                       zaidejai.pavarde,
+                       zaidejai.asmens_kodas,
+                       dalyvavimai.vieta,
+                       gyvi_zaidimai.pradzios_data_laikas,
+                       gyvi_zaidimai.pabaigos_data_laikas,
+                       gyvi_zaidimai.zaideju_skaicius
+       FROM zaidejai
+            INNER JOIN dalyvavimai ON dalyvavimai.zaidejai_id = zaidejai.zaidejai_id
+            INNER JOIN gyvi_zaidimai ON gyvi_zaidimai.gyvi_zaidimai_id = dalyvavimai.gyvi_zaidimai_id
+            INNER JOIN zaidimai ON gyvi_zaidimai.zaidimai_id = zaidimai.zaidimai_id
+       WHERE gyvi_zaidimai.zaideju_skaicius IN   (5,10)
+            AND TO_CHAR(gyvi_zaidimai.pabaigos_data_laikas, 'DD') = '16'
+            AND dalyvavimai.vieta <= 11)
+       SELECT zaideju_dalyvavimai_cte.zaidejai_id,
+              zaideju_dalyvavimai_cte.vardas,
+              zaideju_dalyvavimai_cte.pavarde,
+              zaideju_dalyvavimai_cte.asmens_kodas,
+              zaideju_dalyvavimai_cte.vieta,
+              zaideju_dalyvavimai_cte.pradzios_data,
+              zaideju_dalyvavimai_cte.pabaigos_data,
+              zaideju_dalyvavimai_cte.zaideju_sk
+    FROM zaideju_dalyvavimai_cte
+
+********************************************************************************************
+
+SELECT zaidejai.vardas, zaidejai.pavarde, dalyvavimai.vieta, t.pradzios_data_laikas, t.pabaigos_data_laikas
+FROM dalyvavimai
+    INNER JOIN zaidejai ON dalyvavimai.zaidejai_id = zaidejai.zaidejai_id
+    INNER JOIN (SELECT gyvi_zaidimai_id, pradzios_data_laikas, pabaigos_data_laikas
+                FROM gyvi_zaidimai
+                INNER JOIN punktai ON gyvi_zaidimai.punktai_id = punktai.punktai_id) t
+                ON dalyvavimai.gyvi_zaidimai_id = t.gyvi_zaidimai_id
+                WHERE dalyvavimai.vieta < 6;
+
+**********************************************************************************************
+MERGE query
+
+MERGE INTO gyvi_zaidimai3 gg
+USING gyvi_zaidimai g ON (gg.gyvi_zaidimai_id = g.gyvi_zaidimai_id)
+WHEN matched THEN
+UPDATE 
+SET pobudis = g.pobudis
+WHEN NOT MATCHED THEN
+INSERT (pradzios_data_laikas,pabaigos_data_laikas,pobudis,zaideju_skaicius,GYVI_ZAIDIMAI_ID,DARBUOTOJAI_ID,PUNKTAI_ID,ZAIDIMAI_ID) VALUES 
+(g.pradzios_data_laikas, g.pabaigos_data_laikas, g.pobudis, g.zaideju_skaicius, g.GYVI_ZAIDIMAI_ID, g.DARBUOTOJAI_ID, g.PUNKTAI_ID, g.ZAIDIMAI_ID);
+***********************************************************************************************************
+
+
+SELECT dalyvavimai.zaidejai_id,
+       AVG(prizas),
+       SUM(prizas),
+       MIN(prizas),
+       MAX(prizas)
+FROM dalyvavimai
+GROUP BY dalyvavimai.zaidejai_id;
+
+**************************************************************************************
+Suteikti prieigos teisę prie lentelės ar virtualios lentelės kolegai.
+Sukurti rolę, priskirti jai prieigos teises prie pasirinktų duomenų bazės lentelių ar virtualių lentelių.
+Suteikti rolę kolegai.
+
+GRANT SELECT ON zaidejai to DBPA2023_SEIBUTIS
+CREATE ROLE kolega_role IDENTIFIED BY abcd1234;
+GRANT SELECT ON IprastaJoin TO kolega_role
+GRANT SELECT ON CTE TO kolega_role;
+GRANT kolega_role TO DBPA2023_SEIBUTIS
+REVOKE SELECT ON zaidejai FROM DBPA2023_SEIBUTIS
+REVOKE kolega_role FROM DBPA2023_SEIBUTIS

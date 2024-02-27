@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6F8C244-965D-4DB0-0B5C-EFC699E93C98" name="PUNKTAI">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>B6EEE5E3-00AF-4B94-2496-E26F800FA739</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="apsilankymas" id="581F344A-DF4C-053B-EC2B-88FCE795A600">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>A8C9E096-D655-C7B3-70D0-C58E109E1C77</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vieta" id="645FC26F-E105-05F6-29B8-3DFAB168CC7D">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>FA8E8470-545A-F446-CC22-0E07618167FA</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tel_nr" id="CA1D2F4B-208B-1542-25EE-73AF291CDAC7">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>051B954B-E70B-1BF5-493D-1D1D7FDB8B21</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipas" id="E62C4BEA-59A1-2444-87D7-0F45D780CAC7">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>DC487372-79A5-39BF-E1DA-A92F6A084504</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PUNKTAI_ID" id="D2ACB1DF-6A5F-F470-72C5-B315C2C83469">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="MIESTAI_ID" id="6291A8E4-BE89-F147-9D12-358BD902B931">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="850439C3-4B47-092E-B81F-5CF34DEBB3AC" referredColumn="56C1258A-D235-A36C-01AA-D31B02BF9CF8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5040327-54DF-49DA-B43D-A69422DE8078" name="PUNKTAI_PK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D2ACB1DF-6A5F-F470-72C5-B315C2C83469"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8464041-7319-BA26-E162-C4E8D8E4A9EC" name="PUNKTAI_MIESTAI_FK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>CD2A9CDB-C292-E997-F3AB-38182646EF5D</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6291A8E4-BE89-F147-9D12-358BD902B931"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

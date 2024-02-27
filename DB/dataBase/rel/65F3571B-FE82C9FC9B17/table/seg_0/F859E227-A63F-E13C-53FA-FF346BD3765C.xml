@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F859E227-A63F-E13C-53FA-FF346BD3765C" name="DALYVAVIMAI">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>5F916000-3D0E-BCC1-5AA1-16EA1699275E</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DALYVAVIMAI_ID" id="08EB8FA2-6F7F-CBCC-5C54-1B8BCB551059">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="ZAIDEJAI_ID" id="1F8D4D31-45BF-247D-F4C5-601DAE18AFDD">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36EA3F8A-F565-0B24-BD32-20C65C766D44" referredColumn="9AA04185-85C6-EA49-4433-529D1588EF22"/>
+</associations>
+</Column>
+<Column name="GYVI_ZAIDIMAI_ID" id="6948D4E9-FFD7-046F-B445-83F50DA8E5D7">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4F2B95F6-C601-68A2-13B9-52E29B1ACD22" referredColumn="68C5547C-043F-E6ED-A9B0-9DC172D421A9"/>
+</associations>
+</Column>
+<Column name="vieta" id="DF8266C6-15BE-614C-B7D6-32836B796CF3">
+<createdBy>zygis</createdBy>
+<createdTime>2023-03-28 12:43:16 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prizas" id="23B89F59-EC65-2C0C-8A2F-49330B045ED7">
+<createdBy>zygis</createdBy>
+<createdTime>2023-03-28 12:43:16 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2532564-D589-51EF-DDB1-1082D11B9EFF" name="DALYVAVIMAI_PK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="08EB8FA2-6F7F-CBCC-5C54-1B8BCB551059"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3792585-F199-8104-9361-1310F469682C" name="DALYVAVIMAI_ZAIDEJAI_FK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>4835532B-DD97-968A-1724-9275796D57A2</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F8D4D31-45BF-247D-F4C5-601DAE18AFDD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DD2FAA7-FBBD-2F0E-AACB-7BF77DC8C29D" name="DALYVAVIMAI_GYVI_ZAIDIMAI_FK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>CD17FB5E-4D15-EA3B-7D36-0DEB8C274942</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6948D4E9-FFD7-046F-B445-83F50DA8E5D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

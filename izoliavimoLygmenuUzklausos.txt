@@ -1,0 +1,97 @@
+KAI READ COMITED 
+LOST UPDATES
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+  SELECT zaidejai.*
+  FROM zaidejai
+  WHERE zaidejai_id = 1;
+  UPDATE zaidejai SET zaidejai.vardas = 'AAAAAAAAAAA',
+                      zaidejai.pavarde = 'BBBBBBBBBBBB'
+                  WHERE zaidejai_id = 1;
+  COMMIT;
+
+NON REPEATABLE
+SESIJA 1:
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+BEGIN
+  SELECT gyvi_zaidimai.*
+  FROM gyvi_zaidimai
+  WHERE gyvi_zaidimai_id = 1;
+END;
+
+SESIJA 2:
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+BEGIN
+  SELECT gyvi_zaidimai.*
+  FROM gyvi_zaidimai
+  WHERE gyvi_zaidimai_id = 1;
+  UPDATE gyvi_zaidimai
+  SET gyvi_zaidimai.pobudis = 'BBBBBBBBBBBB'
+  WHERE gyvi_zaidimai_id = 1;
+  COMMIT;
+END;
+
+PHANTOM READS
+SESIJA 1
+
+START TRANSACTION;
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+SELECT zaidejai.vardas, zaidejai.pavarde
+FROM zaidejai;
+COMMIT;
+
+SESIJA 2
+START TRANSACTION;
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+INSERT INTO zaidejai (`lytis`,`gimimo_data`,`asmens_kodas`,`vardas`,`pavarde`,`el_pastas`,`tel_nr`,`zaidejai_id`) VALUES (`vyras`,`14-FEB-2002`,`666-66-6666`,`john`,`wick`,`johnwick@gmail.com`,`555-555-5555`,41);
+COMMIT;
+
+***********************************************************************************************
+KAI SERIALIZABLE
+LOST UPDATES
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+  SELECT zaidejai.*
+  FROM zaidejai
+  WHERE zaidejai_id = 1;
+  UPDATE zaidejai SET zaidejai.vardas = 'AAAAAAAAAAA',
+                      zaidejai.pavarde = 'BBBBBBBBBBBB'
+                  WHERE zaidejai_id = 1;
+  COMMIT;
+
+
+NON REPEATABLE
+
+SESIJA 1:
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+BEGIN
+  SELECT gyvi_zaidimai.*
+  FROM gyvi_zaidimai
+  WHERE gyvi_zaidimai_id = 1;
+END;
+
+SESIJA 2:
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+BEGIN
+  SELECT gyvi_zaidimai.*
+  FROM gyvi_zaidimai
+  WHERE gyvi_zaidimai_id = 1;
+  UPDATE gyvi_zaidimai
+  SET gyvi_zaidimai.pobudis = 'BBBBBBBBBBBB'
+  WHERE gyvi_zaidimai_id = 1;
+  COMMIT;
+END;
+
+
+PHANTOM READS
+SESIJA 1
+
+START TRANSACTION;
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+SELECT zaidejai.vardas, zaidejai.pavarde
+FROM zaidejai;
+COMMIT;
+
+SESIJA 2
+START TRANSACTION;
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+INSERT INTO zaidejai (`lytis`,`gimimo_data`,`asmens_kodas`,`vardas`,`pavarde`,`el_pastas`,`tel_nr`,`zaidejai_id`) VALUES (`vyras`,`14-FEB-2002`,`666-66-6666`,`john`,`wick`,`johnwick@gmail.com`,`555-555-5555`,41);
+COMMIT;

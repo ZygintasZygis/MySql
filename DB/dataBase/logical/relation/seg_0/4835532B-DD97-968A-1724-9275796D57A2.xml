@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="dalyvauja" directorySegmentName="seg_0" id="4835532B-DD97-968A-1724-9275796D57A2">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:26:28 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CF82C438-5594-30A9-314E-88A5CECD19A5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5F916000-3D0E-BCC1-5AA1-16EA1699275E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

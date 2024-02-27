@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E9B3CB1-F101-35DD-085E-0AEFA1EB80E3" name="MIESTAI">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>3BCD8A79-7EB5-447C-31FB-B1AE6999C401</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pavadinimas" id="E8429329-B759-460B-9F2C-14FCE7FED002">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>DFF77AD0-7F2D-A6A8-4AA2-42BA351FEE54</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gyventoju_skaicius" id="29F59D13-E832-249A-41A0-68E039BE4945">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>C32F819F-C01C-B365-98B7-29D8F9AFD91C</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIESTAI_ID" id="56C1258A-D235-A36C-01AA-D31B02BF9CF8">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="VALSTYBES_ID" id="152E9892-B71C-610D-4F8E-5ED5968B30E4">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F6ED4666-FB20-42B0-D0E0-F26A54C9B562" referredColumn="FBDE5534-F044-CF1A-6401-54C5D54A06B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47BA2529-1B9D-4FD7-67FB-366D170FF1CF" name="MIESTAI_PK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="56C1258A-D235-A36C-01AA-D31B02BF9CF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D2A621E-2CC8-FA02-79CC-DF407C8CADA2" name="MIESTAI_VALSTYBES_FK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>BAE9E7C2-C88F-D9BC-6AE2-FEDA3302EA48</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="152E9892-B71C-610D-4F8E-5ED5968B30E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

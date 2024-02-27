@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="stovi" directorySegmentName="seg_0" id="CD2A9CDB-C292-E997-F3AB-38182646EF5D">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:33:36 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>B6EEE5E3-00AF-4B94-2496-E26F800FA739</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3BCD8A79-7EB5-447C-31FB-B1AE6999C401</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

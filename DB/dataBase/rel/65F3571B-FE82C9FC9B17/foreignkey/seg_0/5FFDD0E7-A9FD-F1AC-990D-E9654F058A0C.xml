@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5FFDD0E7-A9FD-F1AC-990D-E9654F058A0C" containerWithKeyObject="DAAD38EB-9431-2465-2C54-210640165449" localFKIndex="5EB05878-26BB-0880-380F-CB2F3FBF5590" name="GYVI_ZAIDIMAI_ZAIDIMAI_FK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>F5DF17BF-DCE0-4976-03D0-39705965469D</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<referredTableLongName>ZAIDIMAI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>72CE2FC3-E2F1-C832-5B53-0B779276D819</referredTableID>
+<keyObject>6BA752D6-FD15-1993-BF2C-0550F524A085</keyObject>
+<referredKeyID>6BA752D6-FD15-1993-BF2C-0550F524A085</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ZAIDIMAI_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

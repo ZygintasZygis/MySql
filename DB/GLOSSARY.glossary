@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<cwd_glossary name="dataBase" description="generated from logical model of design dataBase" id="8D36E46B-118A-8066-35CD-66E719263FDE" incomplete_modifiers="true" >
+
+   <glossaryWord name="DALYVAVIMAS" plural="DALYVAVIMAI" abbreviation="" alt_abbreviation="" id="53DF27FF-ABE3-C7F2-24E9-33D7D8A573F6" import_id="" description="" />
+   <glossaryWord name="DARBO_SUTARTIS" plural="DARBO_SUTARTYS" abbreviation="" alt_abbreviation="" id="569D0C6C-4BA5-CE43-8436-51E878F3F97D" import_id="" description="" />
+   <glossaryWord name="DARBUOTOJAS" plural="DARBUOTOJAI" abbreviation="" alt_abbreviation="" id="E7C83D73-EEEC-4DE8-2049-DE868CC3F954" import_id="" description="" />
+   <glossaryWord name="GYVI_ZAIDIMAI" plural="GYVI_ZAIDIMAI" abbreviation="" alt_abbreviation="" id="94854E98-05CC-C5FE-C70C-E946A117F9FA" import_id="" description="" />
+   <glossaryWord name="MIESTAS" plural="MIESTAI" abbreviation="" alt_abbreviation="" id="76D2E493-C169-D5A0-7E51-A7BDD8D38FDA" import_id="" description="" />
+   <glossaryWord name="PUNKTAS" plural="PUNKTAI" abbreviation="" alt_abbreviation="" id="AC4A4D6D-9FBD-3472-15D3-DD5789E70BF5" import_id="" description="" />
+   <glossaryWord name="VALSTYBE" plural="VALSTYBES" abbreviation="" alt_abbreviation="" id="233B32A3-2691-3F91-8AE9-FF058E98A9D2" import_id="" description="" />
+   <glossaryWord name="ZAIDEJAS" plural="ZAIDEJAI" abbreviation="" alt_abbreviation="" id="DD88479A-A5E9-741D-71D4-A571A9E1C6A6" import_id="" description="" />
+   <glossaryWord name="ZAIDIMAS" plural="ZAIDIMAI" abbreviation="" alt_abbreviation="" id="E12408FD-3B22-3985-E79F-F42AFE09A479" import_id="" description="" />
+   <glossaryWord name="apsilankymas" plural="APSILANKYMAI" abbreviation="" alt_abbreviation="" id="FD634853-9F35-CA88-01B6-581B364A73B9" import_id="" description="" />
+   <glossaryWord name="asmens_kodas" plural="" abbreviation="" alt_abbreviation="" id="C145D650-448E-A193-10E2-FB0F877C58BC" import_id="" description="" />
+   <glossaryWord name="darbdavio_pavadinimas" plural="" abbreviation="" alt_abbreviation="" id="8525F60A-18B7-B63B-E4D2-B9EA1ABCD6DA" import_id="" description="" />
+   <glossaryWord name="darbo_apibudinimas" plural="" abbreviation="" alt_abbreviation="" id="2390791F-7B71-270C-F19E-38DF57671350" import_id="" description="" />
+   <glossaryWord name="darbo_sutarties_rusis" plural="" abbreviation="" alt_abbreviation="" id="40FE46CB-0228-91A4-58E7-9F6EEB3C8922" import_id="" description="" />
+   <glossaryWord name="darbo_uzmokestis" plural="" abbreviation="" alt_abbreviation="" id="2891D02F-F441-1360-FAB8-635A4F749484" import_id="" description="" />
+   <glossaryWord name="el_pastas" plural="" abbreviation="" alt_abbreviation="" id="9BAF09EE-0069-B251-0860-2EA7FC9AA18E" import_id="" description="" />
+   <glossaryWord name="galioja_iki" plural="" abbreviation="" alt_abbreviation="" id="F07B2A5A-5453-FFE3-5D15-E3E94E2CFB8C" import_id="" description="" />
+   <glossaryWord name="galioja_nuo" plural="" abbreviation="" alt_abbreviation="" id="920EA938-0432-3DB4-2A61-B517AD49EAAC" import_id="" description="" />
+   <glossaryWord name="gim_data" plural="" abbreviation="" alt_abbreviation="" id="C03B89C6-382A-463D-4EB7-98AAD6B1C1D3" import_id="" description="" />
+   <glossaryWord name="gimimo_data" plural="" abbreviation="" alt_abbreviation="" id="5FFF067F-D9A6-477B-AD5F-B4FA8EDE4E92" import_id="" description="" />
+   <glossaryWord name="gyventoju_skaicius" plural="" abbreviation="" alt_abbreviation="" id="268F1F9C-A172-22B6-D047-1CC6092FDD73" import_id="" description="" />
+   <glossaryWord name="lytis" plural="" abbreviation="" alt_abbreviation="" id="B39CF4F9-4811-17CC-BFB7-5EC86B8B5B20" import_id="" description="" />
+   <glossaryWord name="max_zaideju" plural="" abbreviation="" alt_abbreviation="" id="BDCD7495-E298-EDBB-DC96-CE3E316F3E8D" import_id="" description="" />
+   <glossaryWord name="pabaigos_data_laikas" plural="" abbreviation="" alt_abbreviation="" id="DA7B01B6-A1D3-2363-7CF8-138E29DA2DA0" import_id="" description="" />
+   <glossaryWord name="pavadinimas" plural="" abbreviation="" alt_abbreviation="" id="07BBDFCA-29FB-A137-8740-386CE7F79EC9" import_id="" description="" />
+   <glossaryWord name="pavarde" plural="" abbreviation="" alt_abbreviation="" id="D6E39AAF-7A51-799C-9CF9-43C8EBE0EADF" import_id="" description="" />
+   <glossaryWord name="pobudis" plural="" abbreviation="" alt_abbreviation="" id="28739D1E-B1CE-FE08-1699-AB697EE9A587" import_id="" description="" />
+   <glossaryWord name="pradzios_data_laikas" plural="" abbreviation="" alt_abbreviation="" id="05D2FF9D-35B3-1F48-96DB-41475CE25058" import_id="" description="" />
+   <glossaryWord name="registruotas_buveines_adresas" plural="" abbreviation="" alt_abbreviation="" id="7E813BC6-AB04-DFB4-357D-7CE4140CDC94" import_id="" description="" />
+   <glossaryWord name="rezultatas" plural="" abbreviation="" alt_abbreviation="" id="143FF100-2971-3D11-05F7-3D6F2138EA64" import_id="" description="" />
+   <glossaryWord name="salygos" plural="" abbreviation="" alt_abbreviation="" id="8777CDD0-CA66-D7BC-97BC-C15E216BC3F7" import_id="" description="" />
+   <glossaryWord name="sostine" plural="" abbreviation="" alt_abbreviation="" id="5986AAC9-3F65-5B27-E9AD-A4F276BA26F2" import_id="" description="" />
+   <glossaryWord name="tapatybes_korteles_nr" plural="" abbreviation="" alt_abbreviation="" id="ED45E9B0-BB33-A5E1-FFD8-F7358518FD75" import_id="" description="" />
+   <glossaryWord name="tel_nr" plural="" abbreviation="" alt_abbreviation="" id="CB8F71BA-40FA-C58E-7E88-539B7E0CA003" import_id="" description="" />
+   <glossaryWord name="tipas" plural="" abbreviation="" alt_abbreviation="" id="4FD564EA-CA00-109A-B081-9028C9A1EAB5" import_id="" description="" />
+   <glossaryWord name="vardas" plural="" abbreviation="" alt_abbreviation="" id="DC6754CE-43B9-0A14-BEDD-6A009E14EBFC" import_id="" description="" />
+   <glossaryWord name="vieta" plural="" abbreviation="" alt_abbreviation="" id="0C937A01-523F-F112-55A0-90F2A137F7C3" import_id="" description="" />
+   <glossaryWord name="zaideju_skaicius" plural="" abbreviation="" alt_abbreviation="" id="48F0ADA2-6D1A-D49C-E289-97C6A765C5D4" import_id="" description="" />
+
+</cwd_glossary>

@@ -1,0 +1,126 @@
+CREATE FUNCTION calculate_avg_prize(live_game_id INT) RETURN NUMBER
+IS
+    avg_prize NUMBER(10,2);
+    BEGIN
+    SELECT AVG(dalyvavimai.prizas) INTO avg_prize
+    FROM dalyvavimai
+    WHERE gyvi_zaidimai_id = live_game_id;
+    IF avg_prize IS NULL THEN
+        avg_prize := 0;
+    END IF;
+    RETURN avg_prize;
+END;
+
+SELECT calculate_avg_prize(1) AS avg_prize;
+
+****************************************************************************************************
+
+CREATE FUNCTION get_player_name(livegame_id INT)
+RETURN VARCHAR
+IS
+player_name VARCHAR(50);
+BEGIN
+    SELECT CONCAT(vardas,pavarde) INTO player_name
+    FROM dalyvavimai
+    WHERE gyvi_zaidimai_id = livegame_id;
+    IF player_name IS NULL THEN
+        player_name := '';
+    END IF;
+    RETURN player_name;
+END;
+
+SELECT get_player_name(1) AS zaidejo_vardas;
+************************************************************************************************
+
+CREATE FUNCTION player_exists(player_id INT)
+RETURNS DECIMAL(10,0)
+BEGIN
+	DECLARE p_exists DECIMAL(10,0);
+    DECLARE counter DECIMAL(10,0);
+    SELECT COUNT(ZAIDEJAI_ID) INTO counter FROM ZAIDEJAI WHERE ZAIDEJAI_ID = player_id;
+    IF counter = 0 THEN
+    	SET p_exists = 0;
+    else
+    	SET p_exists = 1;
+    END IF;
+    RETURN p_exists;
+END;
+
+SELECT player_exists(1) AS zaidejas;
+***********************************************************************************************
+
+CREATE PROCEDURE enroll_player(IN player_id INT, IN livegame_id INT)
+IS
+	v_index := select max(id) from dalyvavimai + 1 NUMBER;
+        v_vieta := 0 NUMBER;
+        v_prizas := 0 NUMBER;
+	p_exists := NUMBER;
+BEGIN
+	SELECT player_exists(player_id) INTO p_exists;
+    IF p_exists = 0 THEN
+    	 SIGNAL SQLSTATE '45000' SET
+     	 MESSAGE_TEXT = 'Zaidejas nerastas.';
+    END IF;
+    INSERT INTO  dalyvavimai(vieta,prizas,dalyvavimai_id, zaidejai_id, gyvi_zaidimaiid)
+    VALUES (v_vieta,v_prizas,v_index,player_id, livegame_id);
+    COMMIT;
+END;
+
+Iškviesti be klaidų:
+	CALL enroll_player(1,1);
+
+Iškviesti su klaida:
+	CALL enroll_player(5,1);
+
+*************************************************************************************************
+
+
+CREATE PROCEDURE remove_player(IN player_id NUMBER)
+IS
+    found_player NUMBER;
+    num_players NUMBER;
+    participate INT;
+    ZAIDEJAI_ID INT;
+	vardas VARCHAR(255);
+	el_pastas VARCHAR(255);
+    done INT DEFAULT FALSE;
+    cur_player CURSOR FOR SELECT * FROM zaidejai;
+    CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
+BEGIN
+    
+    
+    SET found_player = 0;
+    
+    OPEN cur_player;
+
+FETCH cur_player INTO ZAIDEJAI_ID, vardas, el_pastas;
+zaidejai_loop:
+LOOP
+	IF ZAIDEJAI_ID = player_id THEN
+    		SET found_player = ZAIDEJAI_ID;
+		LEAVE zaidejai_loop;
+	END IF;
+	FETCH cur_player INTO ZAIDEJAI_ID, vardas, el_pastas;
+    IF done THEN 
+    	LEAVE zaidejai_loop;
+	END IF;
+    end loop
+    zaidejai_loop;
+    CLOSE cur_player;
+    
+    IF found_player = 0 THEN
+    	 SIGNAL SQLSTATE '45000' SET
+     	 MESSAGE_TEXT = 'zaidejas nerastas';
+    END IF;
+    
+    DELETE FROM dalyvavimai WHERE dalyvavimai.ZAIDEJAI_ID = found_player;
+    DELETE FROM zaidejai WHERE ZAIDEJAI_ID = found_player;
+    
+    COMMIT;
+END;
+
+Iškviesti be klaidų:
+	CALL remove_player(2)
+
+Iškviesti su klaida:
+	CALL remove_player(10)

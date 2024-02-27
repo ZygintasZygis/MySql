@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="atsakingas" directorySegmentName="seg_0" id="8C0A9815-9436-B882-89A5-137DF74B8A74">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:30:50 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>FDA0DA6A-215F-BCF7-111F-58F6B42F3381</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F6BA4226-2BF8-FE08-E61C-E0645A09683F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

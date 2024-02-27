@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F6ED4666-FB20-42B0-D0E0-F26A54C9B562" containerWithKeyObject="1E9B3CB1-F101-35DD-085E-0AEFA1EB80E3" localFKIndex="1D2A621E-2CC8-FA02-79CC-DF407C8CADA2" name="MIESTAI_VALSTYBES_FK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>BAE9E7C2-C88F-D9BC-6AE2-FEDA3302EA48</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<referredTableLongName>VALSTYBES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>22FAD256-FF4F-1832-17F4-C9539310E328</referredTableID>
+<keyObject>AE33994E-FB98-71B1-8EF5-985632E16F73</keyObject>
+<referredKeyID>AE33994E-FB98-71B1-8EF5-985632E16F73</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>VALSTYBES_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

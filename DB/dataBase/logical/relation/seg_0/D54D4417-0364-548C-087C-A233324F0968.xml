@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="turi" directorySegmentName="seg_0" id="D54D4417-0364-548C-087C-A233324F0968">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:32:38 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B6EEE5E3-00AF-4B94-2496-E26F800FA739</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>285E4DEE-FD80-FB2C-1A59-92CECD57CC83</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

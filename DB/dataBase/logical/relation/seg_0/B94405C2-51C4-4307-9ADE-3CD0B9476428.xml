@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="vyksta" directorySegmentName="seg_0" id="B94405C2-51C4-4307-9ADE-3CD0B9476428">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-02-28 14:43:26 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<engineerTo>
+<item key="B093A36B-4C6B-61A0-1301-D6649B90B105" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>FDA0DA6A-215F-BCF7-111F-58F6B42F3381</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>B6EEE5E3-00AF-4B94-2496-E26F800FA739</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

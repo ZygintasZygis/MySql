@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="00E7E088-8587-7574-B96E-C4381BC90663" name="CTE">
+<createdBy>zygis</createdBy>
+<createdTime>2023-04-18 12:51:22 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<ordsAlias>view_3</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[WITH zaideju_dalyvavimai_cte (zaidejai_id, vardas, pavarde, asmens_kodas, vieta, pradzios_data, pabaigos_data, zaideju_sk)
+    AS(SELECT DISTINCT zaidejai.zaidejai_id,
+                       zaidejai.vardas,
+                       zaidejai.pavarde,
+                       zaidejai.asmens_kodas,
+                       dalyvavimai.vieta,
+                       gyvi_zaidimai.pradzios_data_laikas,
+                       gyvi_zaidimai.pabaigos_data_laikas,
+                       gyvi_zaidimai.zaideju_skaicius
+       FROM zaidejai
+            INNER JOIN dalyvavimai ON dalyvavimai.zaidejai_id = zaidejai.zaidejai_id
+            INNER JOIN gyvi_zaidimai ON gyvi_zaidimai.gyvi_zaidimai_id = dalyvavimai.gyvi_zaidimai_id
+            INNER JOIN zaidimai ON gyvi_zaidimai.zaidimai_id = zaidimai.zaidimai_id
+       WHERE gyvi_zaidimai.zaideju_skaicius IN   (5,10)
+            AND TO_CHAR(gyvi_zaidimai.pabaigos_data_laikas, 'DD') = '16'
+            AND dalyvavimai.vieta <= 11)
+       SELECT zaideju_dalyvavimai_cte.zaidejai_id,
+              zaideju_dalyvavimai_cte.vardas,
+              zaideju_dalyvavimai_cte.pavarde,
+              zaideju_dalyvavimai_cte.asmens_kodas,
+              zaideju_dalyvavimai_cte.vieta,
+              zaideju_dalyvavimai_cte.pradzios_data,
+              zaideju_dalyvavimai_cte.pabaigos_data,
+              zaideju_dalyvavimai_cte.zaideju_sk
+    FROM zaideju_dalyvavimai_cte]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="zaidejai_id" id="65285BB5-502D-DBF1-2058-4544C2FA55B9">
+<createdBy>zygis</createdBy>
+<createdTime>2023-04-18 12:54:58 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>zaidejai_id</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="vardas" id="14DEC750-973E-CD26-610F-4ADF354E42E0">
+<createdBy>zygis</createdBy>
+<createdTime>2023-04-18 12:54:58 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>vardas</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pavarde" id="5F76DFC7-75BE-EFE4-BF60-3AE304724951">
+<createdBy>zygis</createdBy>
+<createdTime>2023-04-18 12:54:58 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>pavarde</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="asmens_kodas" id="C7D0535B-648B-D8A9-C002-092BF771658C">
+<createdBy>zygis</createdBy>
+<createdTime>2023-04-18 12:54:58 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>asmens_kodas</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="vieta" id="F8C8347B-C0F8-2C1E-DE44-843525B3C34B">
+<createdBy>zygis</createdBy>
+<createdTime>2023-04-18 12:54:58 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>vieta</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pradzios_data" id="8CC46F16-0C73-52BE-A84C-46C9A2852FEF">
+<createdBy>zygis</createdBy>
+<createdTime>2023-04-18 12:54:58 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>pradzios_data</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="pabaigos_data" id="01BB156D-9EB2-3545-DC17-D60F63F0F631">
+<createdBy>zygis</createdBy>
+<createdTime>2023-04-18 12:54:58 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>pabaigos_data</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="zaideju_sk" id="7963C0AF-6A69-BCA6-F9D2-387E0E4D4F35">
+<createdBy>zygis</createdBy>
+<createdTime>2023-04-18 12:54:58 UTC</createdTime>
+<ownerDesignName>dataBase</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>zaideju_sk</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="855A8FFA-0875-2831-77AD-B800B6CACAFE">
+<container>true</container>
+<tableName>ZAIDEJAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F859E227-A63F-E13C-53FA-FF346BD3765C">
+<container>true</container>
+<tableName>DALYVAVIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DAAD38EB-9431-2465-2C54-210640165449">
+<container>true</container>
+<tableName>GYVI_ZAIDIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="72CE2FC3-E2F1-C832-5B53-0B779276D819">
+<container>true</container>
+<tableName>ZAIDIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D77FF5D7-03A1-B744-BB6F-47BD95C4D9F4">
+<columnName>pavarde</columnName>
+<tableName>ZAIDEJAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="68C5547C-043F-E6ED-A9B0-9DC172D421A9">
+<columnName>GYVI_ZAIDIMAI_ID</columnName>
+<tableName>GYVI_ZAIDIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F1979A55-00D1-1644-7557-6E90CA0E9E8C">
+<columnName>vardas</columnName>
+<tableName>ZAIDEJAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1231C83F-40F9-A82A-D4F2-902EB21EFE90">
+<columnName>ZAIDIMAI_ID</columnName>
+<tableName>GYVI_ZAIDIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6948D4E9-FFD7-046F-B445-83F50DA8E5D7">
+<columnName>GYVI_ZAIDIMAI_ID</columnName>
+<tableName>DALYVAVIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="702B7B40-27BE-D153-A6F8-C8E8F97756D0">
+<columnName>ZAIDIMAI_ID</columnName>
+<tableName>ZAIDIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9AA04185-85C6-EA49-4433-529D1588EF22">
+<columnName>ZAIDEJAI_ID</columnName>
+<tableName>ZAIDEJAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0C95D2B1-4DA4-553D-5E74-2E39380436B1">
+<columnName>pradzios_data_laikas</columnName>
+<tableName>GYVI_ZAIDIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DF8266C6-15BE-614C-B7D6-32836B796CF3">
+<columnName>vieta</columnName>
+<tableName>DALYVAVIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="328043D9-B066-3174-325B-7B31BF401E65">
+<columnName>asmens_kodas</columnName>
+<tableName>ZAIDEJAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1F8D4D31-45BF-247D-F4C5-601DAE18AFDD">
+<columnName>ZAIDEJAI_ID</columnName>
+<tableName>DALYVAVIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C618CE17-3D89-C6F6-9C0F-56DF8A85DA21">
+<columnName>zaideju_skaicius</columnName>
+<tableName>GYVI_ZAIDIMAI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1ADBEBD9-B763-454A-1DB4-111245ED04F0">
+<columnName>pabaigos_data_laikas</columnName>
+<tableName>GYVI_ZAIDIMAI</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

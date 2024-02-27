@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="850439C3-4B47-092E-B81F-5CF34DEBB3AC" containerWithKeyObject="F6F8C244-965D-4DB0-0B5C-EFC699E93C98" localFKIndex="A8464041-7319-BA26-E162-C4E8D8E4A9EC" name="PUNKTAI_MIESTAI_FK">
+<createdBy>zygceg</createdBy>
+<createdTime>2023-03-07 14:17:36 UTC</createdTime>
+<generatorID>CD2A9CDB-C292-E997-F3AB-38182646EF5D</generatorID>
+<ownerDesignName>dataBase</ownerDesignName>
+<referredTableLongName>MIESTAI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1E9B3CB1-F101-35DD-085E-0AEFA1EB80E3</referredTableID>
+<keyObject>47BA2529-1B9D-4FD7-67FB-366D170FF1CF</keyObject>
+<referredKeyID>47BA2529-1B9D-4FD7-67FB-366D170FF1CF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MIESTAI_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
